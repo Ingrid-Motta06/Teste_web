@@ -1,0 +1,59 @@
+
+<fieldset>
+  <legend>Cadastro</legend>
+  <fieldset>
+    <label for="nome">Nome</label>
+    <input
+    type="text"
+    #nome
+    name="nome" required>
+    <br>
+
+    <label for="deficiencia">Tem alguma Deficiente ?</label> <br>
+    Sim <input 
+    type="radio"
+    #deficiente
+    name="deficiencia" value="true" required> Não <input 
+    type="radio"
+    #deficiencia
+    name="deficiencia" value="false" required>
+    <br>
+
+    <label for="idade">Idade</label>
+    <input
+    type="number"
+    #idade
+    name="idade" required>
+    <br>
+
+    <label for="gestante">É gestante?</label> <br>
+    Sim <input
+    type="radio"
+    #gestante
+    name="gestante" value="true" required> Não <input type="radio"
+    #gestante
+    name="gestante" value ="false" required> <br>
+    
+    <label for="gestante">É para exames?</label> <br>
+    Sim <input
+    type="radio"
+    #exames
+    name="exames" value="true" required> Não <input type="radio"
+    #exames
+    name="exames" value ="false" required>
+
+
+    <br> <br>
+
+    <button type="submit" (click)="adicionar_fila_espera(nome.value, idade.value , gestante.value, deficiencia.value, exames.value)">Enviar</button>
+
+
+  </fieldset>
+  
+  
+    
+    
+
+
+
+
